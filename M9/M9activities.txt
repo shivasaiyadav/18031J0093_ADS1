@@ -1,0 +1,48 @@
+Top down merge sort
+problem1
+E A S Y Q U E S T I O N
+E A S Y Q U E S T I O N
+A E S Y Q U 
+A E S Y Q U 
+A E Q S U Y  
+            E S T I O N
+            E I S T O N 
+            E I N O S T
+A E E I N O Q S S T U Y
+
+bottom up merge sort
+problem2
+
+E A S Y Q U E S T I O N
+A E
+    S Y 
+        Q U 
+            E S
+                I T 
+                    N O
+A E S Y 
+        E Q S U
+                I N O T
+A E E Q S S U Y
+A E E I N O Q S S T U Y
+
+problem 3
+size of each topdown merge sort
+	39
+       20 19
+     10 10 10 9
+    5 5 5 5 5 5 5 4 
+  3 2 3 2 3 2 3 2 3 2 3 2 3 2 2 2 
+ 2 1 1 1 2 1 1 1 2 1 1 1 2 1 1 1 2 1 1 1 2 1 1 1 2 1 1 1 1 1 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+
+size of bottom up merge sort
+
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+ 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1
+   4 4 4 4 4 4 4 4 4 3
+     8  8   8   8  7
+       16  16  7
+         32  7
+           39 
+    
