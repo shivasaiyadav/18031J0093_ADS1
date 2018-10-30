@@ -19,11 +19,11 @@ public class Solution
 					// System.out.println("true");
 					int l = 2 * i + 1; // left = 2*i + 1
 					int r = 2 * i + 2; // right = 2*i + 2
-					if (l < n && sp[i].compareTo(sp[l]) > 0) {
+					if (l < n && sp[i].compareTo(sp[l]) < 0) {
 						flag = false;
 						break;
 					}
-					if (r < n && sp[i].compareTo(sp[r]) > 0) {
+					if (r < n && sp[i].compareTo(sp[r]) < 0) {
 						flag = false;
 						break;
 					}
