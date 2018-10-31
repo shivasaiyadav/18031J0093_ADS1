@@ -1,0 +1,96 @@
+fill in the blanks-1
+public void put(Key key, Value val) 
+{
+        if (key == ----------------) throw new IllegalArgumentException("first argument to put() is null");  //Blank1
+        if (val == null) {
+            delete(-----------------);   //Blank2
+            return;
+        }
+        for (Node x = first; x != null; x = ------------) { //Blank3
+            if (key.equals(-----------)) { //Blank4
+                x.val = val;
+                return;
+            }
+        }
+        first = new Node(key, val,------------------); //Blank5
+        n++;
+    }
+
+Blank1: value
+
+
+
+Blank2: value
+
+
+
+Blank3: x++
+
+
+
+Blank4: value
+
+
+
+Blank5: 
+
+fill in the blanks-2
+public int rank(Key key) {
+        if (key == null) throw new IllegalArgumentException("argument to rank() is null"); 
+
+
+        int lo = 0, hi = n-1; 
+        while (lo <= --------) {  //Blank 1
+            int mid = lo + (hi - lo) / 2; 
+            int cmp = key.compareTo(keys[----------]);  //Blank 2
+            if      (cmp < 0) hi = mid - 1; 
+            else if (cmp > 0) lo = mid + 1; 
+            else return ---------------------; //Blank 3
+        } 
+        return lo;
+    }
+
+
+Blank1:key
+
+
+
+Blank2:mid
+
+
+
+Blank3:key
+
+
+fill in the blanks-3
+Suppose the following is you Binary search ST. Answer the following questions after performing operations given below.
+image-3.png
+
+
+What will be the value return by max() method when it is performed on above ST 
+
+**returns max value
+
+What will be the value return by min() method when it is performed on above ST
+
+**returns min value
+
+
+What will be the value return by select(2) method when it is performed on above ST
+
+**2nd smallest key in the symbol table
+
+
+What will be the value return by get(R) method when it is performed on above ST
+
+** gets the value at R
+
+What will be the value return by floor(N) method when it is performed on above ST
+
+
+**largest key less than or eqaul to N
+
+What will be the value return by ceiling(N) method when it is performed on above ST
+
+
+**smallest key greater than or equal to N
