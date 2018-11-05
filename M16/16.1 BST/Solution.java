@@ -47,14 +47,14 @@ public class Solution
 		}
 		return node;
 	}
-	public void print(Node temp) {
+	/*public void print(Node temp) {
 		if(temp!=null) {
 			print(temp.left);
 			System.out.println(temp.key.Name+" "+temp.value);
 			print(temp.right);
-		}
+		}*/
 		
-	}
+	
 	public int get(Book Key)
 	{
 		Node node=root;
@@ -88,7 +88,7 @@ public class Solution
 				else
 				 	System.out.println("null");
 			case "print":
-				bt.print(bt.root);
+				break;
 			}
 			
 		}
