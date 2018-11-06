@@ -1,0 +1,43 @@
+Fill the following blanks in the rank method of BST
+fill in the blanks 1
+private int rank(Key key, Node x) {
+        if (x == _______)   return 0;                              //Blank1
+        int cmp = key.compareTo(________);              //Blank2
+        if (cmp < 0)   return rank(key, ________);        //Blank3 
+        else if (cmp > 0) return 1 + size(x.left) + rank(key, _____); //Blank4 
+        else              return size(______);  //Blank5 
+
+}
+
+
+Blank1:null
+
+
+
+Blank2:x.key
+
+
+Blank3:x.left
+
+
+Blank4:x.right
+
+
+Blank5:x.right
+
+learning by doing 1:
+Give the sequences of nodes examined when the methods in BST are used to compute each of the following quantities for the tree drawn at below.
+a. floor("Q") 
+b. select(5) 
+c. ceiling("Q") 
+d. rank("J") 
+e. size("D", "T") 
+f. keys("D", "T")
+
+ans: 
+a) floor(Q) is Q.
+b)select(5) is T.
+c)ceiling(Q) is Q.
+d)rank(J) is 
+e) sizes of D , T.
+f) keys of D ,T.
