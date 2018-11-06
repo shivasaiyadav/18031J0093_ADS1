@@ -90,7 +90,7 @@ class Binarysearch
             current = current.left; 
             
         }
-            System.out.println(current.key.Name+","+current.key.Author+","+current.key.price); 
+            System.out.println(current.key.Name+", "+current.key.Author+", "+current.key.price); 
     } 
 	public void max(Node node)
 	{
@@ -99,7 +99,7 @@ class Binarysearch
 		{
 			current = current.right;
 		}
-		System.out.println(current.key.Name+","+current.key.Author+","+current.key.price);
+		System.out.println(current.key.Name+", "+current.key.Author+", "+current.key.price);
 	}
 	
 	public Node Floor(Node x,Book key) {
