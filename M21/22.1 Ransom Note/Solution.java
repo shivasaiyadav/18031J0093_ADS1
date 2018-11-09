@@ -17,7 +17,7 @@ public static void main(String args[])
 	int i=0;
 	if(hm.containsValue(s2))
 	{
-		System.out.println("yes");
+		System.out.println("Yes");
 	}
 	else
 	{
