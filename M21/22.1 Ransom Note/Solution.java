@@ -51,7 +51,10 @@ public class Solution {
     Scanner scanner = new Scanner(System.in);
     int m = scanner.nextInt();
     int n = scanner.nextInt();
-	scanner.nextLine();
+
+    // Eat whitespace to beginning of next line
+    scanner.nextLine();
+
     Solution s = new Solution(scanner.nextLine(), scanner.nextLine());
     scanner.close();
 
