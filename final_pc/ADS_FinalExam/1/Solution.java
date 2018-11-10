@@ -52,7 +52,7 @@ public class Solution
 				System.out.println(st1.marks);
 			}
 			}
-			i++;
+			j++;
 		}
 		System.out.println(" ");
 	}
