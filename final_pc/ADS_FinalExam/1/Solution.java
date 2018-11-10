@@ -36,7 +36,11 @@ public class Solution
 		{
 			String output = sc.nextLine();
 			String []d2=output.split(" ");
-			if(!hst.containsKey(Integer.parseInt(d2[2])==1))
+			if(!hst.containsKey(Integer.parseInt(d2[1])))
+			{
+				System.out.println("Student doesn't exists...");
+			}
+			else if(Integer.parseInt(d2[2])==1)
 			{
 				Student st1 = hst.get(Integer.parseInt(d2[1]));
 				System.out.println(st1.name);
@@ -46,10 +50,6 @@ public class Solution
 				Student st1 = hst.get(Integer.parseInt(d2[1]));
 				System.out.println(st1.marks);
 			}
-			else if(!hst.containsKey(Integer.parseInt(d2[1])))
-			{
-				System.out.println("Student doesn't exists...");
-			}	
 			i++;
 		}
 	}
