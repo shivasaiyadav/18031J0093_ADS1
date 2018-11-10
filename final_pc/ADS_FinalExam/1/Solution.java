@@ -1,4 +1,3 @@
-
 import java.util.Hashtable;
 import java.util.Scanner;
 
@@ -36,6 +35,8 @@ public class Solution
 		{
 			String output = sc.nextLine();
 			String []d2=output.split(" ");
+			if(d2[0].equals("get"))
+			{
 			if(!hst.containsKey(Integer.parseInt(d2[1])))
 			{
 				System.out.println("Student doesn't exists...");
@@ -50,8 +51,9 @@ public class Solution
 				Student st1 = hst.get(Integer.parseInt(d2[1]));
 				System.out.println(st1.marks);
 			}
+			}
 			i++;
 		}
-System.out.println(" ");
+		System.out.println(" ");
 	}
 }
